@@ -24,6 +24,10 @@ ul {
   box-sizing: border-box;
 }
 
+.sub-container {
+  overflow: auto;
+}
+
 .content-row {
   display: flex;
   align-items: center;

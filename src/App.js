@@ -34,13 +34,16 @@ const App = () => {
             <InputField type="text" placeholder="Write task" value={task} onChange={handleOnTaskChange} />
             <Button onClick={handleAddTask} theme="main-button">+</Button>
           </div>
-          <div className="content-column">
-            <ul>
-              {tasks.map((task, index) => (
-                <li value={index}><TodoField>{task}</TodoField></li>
-              ))}
-            </ul>
+          <div className="sub-container">
+            <div className="content-column">
+              <ul>
+                {tasks.map((task, index) => (
+                  <li value={index}><TodoField>{task}</TodoField></li>
+                ))}
+              </ul>
+            </div>
           </div>
+
         </Box>
       </div>
     </div>
