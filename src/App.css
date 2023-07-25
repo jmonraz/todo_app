@@ -69,9 +69,10 @@ ul {
 
 @media (max-width: 480px) {
   .content-wrapper {
-    padding: 0;
+    padding: 5px;
   }
 }
+
 
 @media (max-width: 780px) {
   .main-button {
@@ -83,6 +84,6 @@ ul {
   }
 
   .content-wrapper {
-    padding: 25px;
+    padding: 15px;
   }
 }
