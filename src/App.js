@@ -28,6 +28,10 @@ const App = () => {
     setTasks(tasks.filter(task => task.id !== id));
   }
 
+  const handleUpdateTask = (id, newValue) => {
+    setTasks(tasks.map(task => task.id === id ? { id, value: newValue } : task));
+  }
+
   return (
     <div className="app-container">
       <div className="content-wrapper">
@@ -43,7 +47,7 @@ const App = () => {
             <div className="content-column">
               <ul>
                 {tasks.map(task => (
-                  <li value={task.id}><TodoField onClick={handleRemoveTask} id={task.id}>{task.value}</TodoField></li>
+                  <li value={task.id}><TodoField onClick={handleRemoveTask} id={task.id} onUpdate={handleUpdateTask}>{task.value}</TodoField></li>
                 ))}
               </ul>
             </div>
