@@ -10,10 +10,19 @@ import TodoField from "./components/TodoField/TodoField";
 const App = () => {
 
   const [task, setTask] = useState('');
+  const [tasks, setTasks] = useState([]);
 
   const handleOnTaskChange = event => {
     setTask(event.target.value);
   };
+
+  const handleAddTask = () => {
+    if (task.trim() !== '') {
+      setTasks([...tasks, task.trim()]);
+      setTask('');
+    }
+  };
+
   return (
     <div className="app-container">
       <div className="content-wrapper">
@@ -23,10 +32,14 @@ const App = () => {
           </div>
           <div className="content-row">
             <InputField type="text" placeholder="Write task" value={task} onChange={handleOnTaskChange} />
-            <Button onClick={() => { }} theme="main-button">+</Button>
+            <Button onClick={handleAddTask} theme="main-button">+</Button>
           </div>
           <div className="content-column">
-            <TodoField>Hello there</TodoField>
+            <ul>
+              {tasks.map((task, index) => (
+                <li value={index}><TodoField>{task}</TodoField></li>
+              ))}
+            </ul>
           </div>
         </Box>
       </div>
