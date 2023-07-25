@@ -18,11 +18,11 @@
 }
 
 .input_field {
-    padding: 0px 15px;
+    padding: 5px;
     border: none;
     background-color: transparent;
     font-size: 17px;
-    flex: 1;
+    width: 100%;
     font-weight: 600;
 }
 
