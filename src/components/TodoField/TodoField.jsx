@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from './TodoField.module.css';
+import trashIcon from '../../assets/icons/trash_icon.png';
+import editIcon from '../../assets/icons/edit_icon.png';
 
 const TodoField = ({ children, onClick, id, onUpdate }) => {
     const [isEditing, setIsEditing] = useState(false);
@@ -32,8 +34,8 @@ const TodoField = ({ children, onClick, id, onUpdate }) => {
                             <p className={styles.title}>{children}</p>
                         </div>
                         <div className={styles.buttons}>
-                            <button className={styles.update_button} onClick={handleUpdateClick}>Update</button>
-                            <button className={styles.delete_button} onClick={() => onClick(id)}>Delete</button>
+                            <button className={styles.update_button} onClick={handleUpdateClick}><img src={editIcon} alt="edit_icon" className={styles.icon} /></button>
+                            <button className={styles.delete_button} onClick={() => onClick(id)}><img src={trashIcon} alt="trash_icon" className={styles.icon} /></button>
                         </div>
                     </>
                 )}

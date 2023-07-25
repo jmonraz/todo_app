@@ -44,10 +44,8 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
     color: #f4f4f4;
-    font-weight: 600;
-    font-size: 17px;
     background-color: red;
-    padding: 10px 15px;
+    padding: 10px;
     cursor: pointer;
     margin: 5px;
 }
@@ -65,11 +63,9 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
     color: #f4f4f4;
-    font-weight: 600;
-    font-size: 17px;
     background-color: orange;
-    padding: 10px 15px;
     cursor: pointer;
+    padding: 10px;
     margin: 5px;
 }
 
@@ -86,12 +82,10 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
     color: #f4f4f4;
-    font-weight: 600;
-    font-size: 17px;
     background-color: blue;
-    padding: 10px 15px;
     cursor: pointer;
     margin: 5px;
+    padding: 15px;
 }
 
 .save_button:hover {
@@ -102,6 +96,10 @@
     background-color: rgb(28, 28, 193);
 }
 
+.icon {
+    width: 22px;
+}
+
 
 @media (max-width: 780px) {
 
@@ -110,6 +108,10 @@
     .update_button {
         font-size: 15px;
         padding: 5px 10px;
+    }
+
+    .icon {
+        width: 18px;
     }
 
     .buttons {

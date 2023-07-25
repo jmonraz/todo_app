@@ -37,7 +37,7 @@ const App = () => {
       <div className="content-wrapper">
         <Box>
           <div className="content-row">
-            <p className="title">TODO LIST</p>
+            <p className="title">TO-DO LIST</p>
           </div>
           <div className="content-row">
             <InputField type="text" placeholder="Write task" value={task} onChange={handleOnTaskChange} />
