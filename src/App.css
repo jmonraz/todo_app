@@ -67,6 +67,12 @@ ul {
   margin: 5px;
 }
 
+@media (max-width: 480px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
 @media (max-width: 780px) {
   .main-button {
     padding: 10px;
