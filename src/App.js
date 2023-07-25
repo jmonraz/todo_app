@@ -18,7 +18,8 @@ const App = () => {
 
   const handleAddTask = () => {
     if (task.trim() !== '') {
-      setTasks([...tasks, task.trim()]);
+      const newTask = { id: Math.random(), value: task.trim() };
+      setTasks([...tasks, newTask]);
       setTask('');
     }
   };
@@ -37,8 +38,8 @@ const App = () => {
           <div className="sub-container">
             <div className="content-column">
               <ul>
-                {tasks.map((task, index) => (
-                  <li value={index}><TodoField>{task}</TodoField></li>
+                {tasks.map(task => (
+                  <li value={task.id}><TodoField>{task.value}</TodoField></li>
                 ))}
               </ul>
             </div>
