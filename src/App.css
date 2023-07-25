@@ -1,6 +1,5 @@
 body {
   background: linear-gradient(to bottom, #68a8d8, #5393c5, #3e7fb2, #296b9f, #2471a3);
-  ;
 }
 
 ul {
@@ -10,7 +9,7 @@ ul {
 .app-container {
   background: linear-gradient(to bottom, #68a8d8, #5393c5, #3e7fb2, #296b9f, #2471a3);
   height: 100vh;
-  min-height: 500px;
+  min-height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
