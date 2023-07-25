@@ -1,0 +1,21 @@
+.white-box {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+    /* minus top and bottom padding */
+    width: calc(100% - 100px);
+    /* minus left and right padding */
+    max-width: 780px;
+    padding: 10px;
+    /* box will maintain this width even on smaller screens */
+}
+
+@media (max-width: 780px) {
+    .white-box {
+        height: 100%;
+        width: 100%;
+    }
+}
