@@ -7,6 +7,16 @@
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
 }
 
+.content {
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .input_field {
     padding: 0px 15px;
     border: none;
@@ -24,7 +34,9 @@
     margin: 5px;
     padding: 5px 10px;
     font-size: 17px;
-    flex: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .delete_button {
@@ -98,6 +110,10 @@
     .update_button {
         font-size: 15px;
         padding: 5px 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
     }
 
     .title {

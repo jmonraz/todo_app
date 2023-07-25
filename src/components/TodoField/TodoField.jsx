@@ -28,9 +28,13 @@ const TodoField = ({ children, onClick, id, onUpdate }) => {
                     </>
                 ) : (
                     <>
-                        <p className={styles.title}>{children}</p>
-                        <button className={styles.update_button} onClick={handleUpdateClick}>Update</button>
-                        <button className={styles.delete_button} onClick={() => onClick(id)}>Delete</button>
+                        <div className={styles.content}>
+                            <p className={styles.title}>{children}</p>
+                        </div>
+                        <div className={styles.buttons}>
+                            <button className={styles.update_button} onClick={handleUpdateClick}>Update</button>
+                            <button className={styles.delete_button} onClick={() => onClick(id)}>Delete</button>
+                        </div>
                     </>
                 )}
             </div>
