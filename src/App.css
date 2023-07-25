@@ -24,6 +24,12 @@
   align-items: center;
 }
 
+.content-column {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .main-button {
   border: none;
   cursor: pointer;
