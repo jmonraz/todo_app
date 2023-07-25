@@ -24,6 +24,10 @@ const App = () => {
     }
   };
 
+  const handleRemoveTask = id => {
+    setTasks(tasks.filter(task => task.id !== id));
+  }
+
   return (
     <div className="app-container">
       <div className="content-wrapper">
@@ -39,12 +43,11 @@ const App = () => {
             <div className="content-column">
               <ul>
                 {tasks.map(task => (
-                  <li value={task.id}><TodoField>{task.value}</TodoField></li>
+                  <li value={task.id}><TodoField onClick={handleRemoveTask} id={task.id}>{task.value}</TodoField></li>
                 ))}
               </ul>
             </div>
           </div>
-
         </Box>
       </div>
     </div>
