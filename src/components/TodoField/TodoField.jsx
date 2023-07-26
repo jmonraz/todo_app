@@ -6,6 +6,7 @@ import editIcon from '../../assets/icons/edit_icon.png';
 const TodoField = ({ children, onClick, id, onUpdate }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [newTask, setNewTask] = useState(children);
+    const [isCompleted, setIsCompleted] = useState(false);
 
     const handleUpdateClick = () => {
         setIsEditing(true);
@@ -20,6 +21,11 @@ const TodoField = ({ children, onClick, id, onUpdate }) => {
         setNewTask(event.target.value);
     };
 
+    const handleCompletedClick = () => {
+        setIsCompleted(!isCompleted);
+
+    };
+
     return (
         <>
             <div className={styles.container}>
@@ -31,7 +37,8 @@ const TodoField = ({ children, onClick, id, onUpdate }) => {
                 ) : (
                     <>
                         <div className={styles.content}>
-                            <p className={styles.title}>{children}</p>
+                            <input type="checkbox" onClick={handleCompletedClick} />
+                            <p className={`${styles.title} ${isCompleted ? styles.completed : ''}`}>{children}</p>
                         </div>
                         <div className={styles.buttons}>
                             <button className={styles.update_button} onClick={handleUpdateClick}><img src={editIcon} alt="edit_icon" className={styles.icon} /></button>

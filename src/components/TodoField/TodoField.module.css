@@ -9,6 +9,16 @@
 
 .content {
     flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content input {
+    margin-left: 15px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
 }
 
 .buttons {
@@ -100,6 +110,10 @@
     width: 22px;
 }
 
+.completed {
+    text-decoration: line-through;
+}
+
 
 @media (max-width: 780px) {
 
@@ -124,5 +138,11 @@
 
     .input_field {
         font-size: 15px;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        margin: 0;
+        margin-left: 10px;
     }
 }
