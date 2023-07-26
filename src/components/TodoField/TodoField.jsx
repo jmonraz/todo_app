@@ -40,10 +40,12 @@ const TodoField = ({ children, onClick, id, onUpdate }) => {
                             <input type="checkbox" onClick={handleCompletedClick} />
                             <p className={`${styles.title} ${isCompleted ? styles.completed : ''}`}>{children}</p>
                         </div>
-                        <div className={styles.buttons}>
-                            <button className={styles.update_button} onClick={handleUpdateClick}><img src={editIcon} alt="edit_icon" className={styles.icon} /></button>
-                            <button className={styles.delete_button} onClick={() => onClick(id)}><img src={trashIcon} alt="trash_icon" className={styles.icon} /></button>
-                        </div>
+                        {!isCompleted && (
+                            <div className={styles.buttons}>
+                                <button className={styles.update_button} onClick={handleUpdateClick}><img src={editIcon} alt="edit_icon" className={styles.icon} /></button>
+                                <button className={styles.delete_button} onClick={() => onClick(id)}><img src={trashIcon} alt="trash_icon" className={styles.icon} /></button>
+                            </div>
+                        )}
                     </>
                 )}
             </div>
