@@ -31,7 +31,7 @@ const TodoField = ({ children, onClick, id, onUpdate }) => {
             <div className={styles.container}>
                 {isEditing ? (
                     <>
-                        <input type="text" value={newTask} onChange={handleChange} className={styles.input_field} />
+                        <input type="text" value={newTask} onChange={handleChange} className={styles.input_field} autoFocus />
                         <button className={styles.save_button} onClick={handleSaveClick}>Save</button>
                     </>
                 ) : (
