@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #68a8d8, #5393c5, #3e7fb2, #296b9f, #2471a3);
+  background: linear-gradient(to bottom, #B8C6DB, #6B8DAB, #2F5E82, #2C3E50, #BDC3C7);
 }
 
 ul {
@@ -7,7 +7,7 @@ ul {
 }
 
 .app-container {
-  background: linear-gradient(to bottom, #68a8d8, #5393c5, #3e7fb2, #296b9f, #2471a3);
+  background: linear-gradient(to bottom, #B8C6DB, #6B8DAB, #2F5E82, #2C3E50, #BDC3C7);
   height: 100vh;
   min-height: 200px;
   width: 100%;
@@ -20,7 +20,7 @@ ul {
   overflow-y: auto;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, #68a8d8, #5393c5, #3e7fb2, #296b9f, #2471a3);
+  background: linear-gradient(to bottom, #B8C6DB, #6B8DAB, #2F5E82, #2C3E50, #BDC3C7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +46,8 @@ ul {
 .main-button {
   border: none;
   cursor: pointer;
-  background-color: black;
-  color: #f4f4f4;
+  background-color: #2D3748;
+  color: #EDEDED;
   font-weight: 700;
   font-size: 18px;
   border-radius: 5px;
@@ -57,11 +57,11 @@ ul {
 }
 
 .main-button:hover {
-  background-color: rgb(29, 29, 29);
+  background-color: #1A202C;
 }
 
 .main-button:active {
-  background-color: rgb(43, 42, 42);
+  background-color: #171923;
 }
 
 .title {

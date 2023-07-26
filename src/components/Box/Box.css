@@ -1,5 +1,5 @@
 .white-box {
-    background-color: #f4f4f4;
+    background-color: RGB(244, 244, 244, 0.6);
     border-radius: 5px;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
     display: flex;
