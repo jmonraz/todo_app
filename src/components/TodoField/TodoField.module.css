@@ -17,8 +17,9 @@
     margin-left: 15px;
 }
 
-input[type="checkbox"] {
+.content input[type="checkbox"] {
     transform: scale(1.5);
+    flex-shrink: 0;
 }
 
 .buttons {
